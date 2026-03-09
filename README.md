@@ -1,2 +1,2 @@
-# Jeyih-portfolio
+# JE-portfolio
 Online CV
