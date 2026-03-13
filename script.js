@@ -10,6 +10,13 @@ function setActiveNav() {
     });
 }
 
+const burger = document.getElementById("burger");
+const nav = document.getElementById("nav-links");
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("show");
+});
+
 // Animate progress bars on page load
 function animateProgressBars() {
     const progressBars = document.querySelectorAll('.progress-fill');
