@@ -24,8 +24,8 @@ body {
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:15px 30px;
-  background:#0f172a;
+  padding:15px;
+  background:#f8c49a;
 }
 
 .logo{
@@ -43,8 +43,9 @@ body {
 }
 
 .nav-links a{
-  color:white;
+  color:rgb(0, 0, 0);
   text-decoration:none;
+  font-weight: 700;
 }
 
 /* BURGER */
@@ -57,7 +58,7 @@ body {
 .burger div{
   width:25px;
   height:3px;
-  background:white;
+  background:rgb(0, 0, 0);
   margin:5px;
 }
 
@@ -72,8 +73,8 @@ body {
   .nav-links{
     position:absolute;
     right:0;
-    top:60px;
-    background:#4263ad;
+    top:40px;
+    background:#f8c49a;
     flex-direction:column;
     width:100%;
     text-align:center;
@@ -81,7 +82,7 @@ body {
   }
 
   .nav-links li{
-    padding:15px 0;
+    padding:10px;
   }
 
   .nav-links.show{
@@ -90,42 +91,37 @@ body {
 
 }
 
-/* Buttons */
 
-.cta-buttons {
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
+.nav-links a:hover,
+.nav-links a.active {
+    color: #0065b8;
 }
 
-.btn {
-    padding: 15px 20px;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    display: inline-block;
-    transition: all 0.3s ease;
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:#0078f0;
+    transition: width 0.3s ease;
 }
 
-.btn {
-    background-color: #0066cc;
-    color: rgb(236, 225, 225);
-
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0px 50px;
+    color: #000000;
 }
-
-.btn:hover {
-    background-color: #003a74;
-
-}
-
-
 
 /* Section */
 section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 18px 25px;
-    border-top: 1px solid;
+    border-top: 2px solid;
 }
 
 
@@ -133,9 +129,9 @@ section {
     font-family: 'Playfair Display', serif;
     font-size: 33px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
+    margin-top: 50px;
     position: relative;
-    padding-bottom: 20px;
 }
 
 
@@ -324,23 +320,22 @@ section {
 .featured-skills {
     border: 1px solid;
     border-radius: 8px;
-    padding: 30px;
+    padding: 50px;
     margin-bottom: 50px;
 }
 
-.featured-skills h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #0066cc;
+.featured-skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
 }
 
 
 .featured-skill-item {
     background-color:rgb(172, 212, 247);
     color:#000000;
-    padding: 10px;
+    padding: 15px 25px;
+    
     border-radius: 10px;
     font-weight: 600;
     text-align: center;
@@ -417,6 +412,7 @@ section {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 10px;
+    color: rgb(184, 0, 0);
 }
 
 .project-category {
@@ -761,6 +757,7 @@ section {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .contact-item {
@@ -773,6 +770,7 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    color:rgb(255, 135, 135);
 }
 
 .contact-value {
@@ -787,31 +785,7 @@ section {
     color:#0078f0;
 }
 
-.contact-links {
-    display: flex;
-    gap: 10px;
-    margin-top: 18px;
-}
 
-.social-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
-    background-color:#0078f0;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.social-link:hover {
-    background-color:aliceblue;
-    color: white;
-    transform: translateY(-3px);
-}
 
 .contact-form {
     background-color:antiquewhite;
