@@ -18,11 +18,13 @@ body {
     color: #000000;
 }
 
+
 /* Navigation */
+
 nav {
     top: 0;
     background-color: rgba(201, 213, 221, 0.95);
-    border-bottom: 3px solid var(--border);
+    border-bottom: 3px solid ;
 }
 
 .navi {
@@ -67,13 +69,58 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--accent);
+    background-color:#0078f0;
     transition: width 0.3s ease;
 }
 
 .nav-links a:hover::after,
 .nav-links a.active::after {
     width: 100%;
+}
+
+ .nav-list{
+    position:absolute;
+    top:60px;
+    left:0;
+    width:100%;
+    background:#0f172a;
+    flex-direction:column;
+    text-align:center;
+    display:none;
+  }
+
+  .nav-list li{
+    padding:15px 0;
+  }
+
+  .nav-list.active{
+    display:flex;
+  }
+
+/* BURGER ICON for mobile NAV */
+
+.menu-toggle{
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+}
+
+.menu-toggle span{
+  height:3px;
+  width:25px;
+  background:white;
+  margin:4px 0;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+  .menu-toggle{
+    display:flex;
+  }
+
+
 }
 
 /* Buttons */
@@ -761,6 +808,24 @@ section {
     letter-spacing: 0.5px;
 }
 
+.contact-item i{
+  color:#E1306C;
+  margin-right:10px;
+  font-size:22px;
+}
+
+.contact-item a{
+  text-decoration:none;
+  color:#333;
+
+}
+
+.contact-item span{
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .contact-value {
     color:#000000;
     font-size: 17px;
@@ -935,5 +1000,6 @@ footer {
     animation: fadeInUp 0.8s ease forwards;
     opacity: 0;
 }
+
 
 
