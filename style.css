@@ -924,4 +924,24 @@ footer {
     opacity: 0;
 }
 
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 24px;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+
+    .home_content,
+    .content-grid,
+    .contact-content,
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
 
