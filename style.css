@@ -71,14 +71,13 @@ body {
   }
 
   .nav-links{
-    position:absolute;
-    right:0;
-    top:40px;
+    position:relative;
     background:#f8c49a;
     flex-direction:column;
-    width:100%;
+    width:30%;
     text-align:center;
     display:none;
+    border-radius: 40px;
   }
 
   .nav-links li{
